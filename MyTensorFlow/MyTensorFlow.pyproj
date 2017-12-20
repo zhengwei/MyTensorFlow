@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>2a958e40-7fcc-451f-a833-60da1eb236cc</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>MyTensorFlow.py</StartupFile>
+    <StartupFile>LinerR.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="MyTensorFlow.py" />
+    <Compile Include="input_data.py" />
+    <Compile Include="LinerR.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mnist.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
